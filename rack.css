@@ -28,7 +28,7 @@
   align-items: flex-start;
   position: absolute;
   bottom: 10px;
-  left: 20px;
+  left: 30px;
 }
 
 .disk {
@@ -51,6 +51,30 @@
   transform: translate(-50%, -50%);
 }
 
+.ventilation {
+  position: absolute;
+  bottom: 17px;
+  left: 90px;
+  width: 320px;
+  height: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ventilation-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+.ventilation-hole {
+  width: 15px;
+  height: 10px;
+  background-color: #aaa;
+  border-radius: 20%;
+  margin: 0 5px;
+}
 
 .server::before,
 .server::after {
