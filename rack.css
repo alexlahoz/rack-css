@@ -95,3 +95,40 @@
 .server::after {
   right: 7px;
 }
+
+.power-button {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 15px;
+  height: 15px;
+  background-color: #333;
+  border-radius: 20%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.power-button::after {
+  content: "";
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  width: 2px;
+  height: 5px;
+  border-radius: 10%;
+  background-color: #4CAF50;
+  transform: translate(-50%, -50%);
+}
+
+.power-button::before {
+  content: "";
+  width: 10px;
+  height: 8px;
+  margin-top: 2px;
+  border: 2px solid #4CAF50;
+  border-top: none;
+  border-radius: 0 0 60% 60%;
+  background-color: transparent;
+}
