@@ -1,0 +1,56 @@
+/* @import "compass/css3"; */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.brackets {
+  width: 300px;
+  height: 100px;
+  margin: 60px auto;
+  position: relative;
+  background: #4f4d4e;
+  border-radius: 10px;
+  box-shadow:
+    0 10px 0 12px #4d4d4e,
+    0 0 0 12px #bdbdbd;
+} 
+
+.brackets:before {
+  content: "";
+  position: absolute;
+  left: 110%;
+  top: 80%;
+  width: 4%;
+  height: 12%;
+  margin: -22% 0 0 -25%; 
+  background: rgb(116, 233, 116);
+  border: 2px solid #000000;
+  border-radius: 100%;
+}
+
+.brackets:after {
+  content: "";
+  position: absolute;
+  left: 110%;
+  top: 95%;
+  width: 4%;
+  height: 12%;
+  margin: -22% 0 0 -25%; 
+  background: rgb(254, 218, 1);
+  border: 2px solid #000000;
+  border-radius: 100%;
+  /* animation: choppyBlink 0.4s infinite; */
+}
+
+@keyframes choppyBlink {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
