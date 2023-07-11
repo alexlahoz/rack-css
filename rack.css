@@ -43,12 +43,24 @@
 .disk-dot {
   width: 10px;
   height: 10px;
-  background-color: #4CAF50;
+  background-color: #aaa;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: calc(100% + 8px);
   transform: translate(-50%, -50%);
+}
+
+.dot-ok {
+  background-color: #4CAF50;
+}
+
+.dot-warning {
+  background-color: #feda01;
+}
+
+.dot-danger {
+  background-color: #f44336;
 }
 
 .ventilation {
@@ -120,6 +132,7 @@
   border-radius: 10%;
   background-color: #4CAF50;
   transform: translate(-50%, -50%);
+  /* animation: choppyBlink 0.4s infinite; */
 }
 
 .power-button::before {
@@ -131,4 +144,10 @@
   border-top: none;
   border-radius: 20% 20% 55% 55%;
   background-color: transparent;
+  /* animation: choppyBlink 0.4s infinite; */
+}
+
+@keyframes choppyBlink {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
