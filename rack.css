@@ -126,9 +126,9 @@
   content: "";
   width: 10px;
   height: 8px;
-  margin-top: 2px;
+  margin-top: 3px;
   border: 2px solid #4CAF50;
   border-top: none;
-  border-radius: 0 0 60% 60%;
+  border-radius: 20% 20% 55% 55%;
   background-color: transparent;
 }
